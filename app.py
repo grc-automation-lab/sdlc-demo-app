@@ -69,7 +69,7 @@ def update_task(task_id):
         if not isinstance(data["title"], str) or not data["title"]:
             abort(400, description="title must be a non-empty string")
         _tasks[task_id]["title"] = data["title"]
-    if "completed" in data:
+    if data.get("completed") is not None:
         if not isinstance(data["completed"], bool):
             abort(400, description="completed must be a boolean")
         _tasks[task_id]["completed"] = data["completed"]
