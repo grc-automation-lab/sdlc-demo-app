@@ -17,10 +17,6 @@ This repo is the **evidence source** for four SDLC controls:
 | Change traceability | Every PR is linked to a GitHub Issue via `Closes #<id>` |
 | Access review | Repo collaborator list, reviewed and documented periodically |
 
-A fifth control (automated security testing gate) is demonstrated using a
-**separate** fork of OWASP Juice Shop, since this app is too small/clean to
-trigger real findings.
-
 ## Running locally
 
 ```bash
