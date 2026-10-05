@@ -13,6 +13,7 @@ This repo is the **evidence source** for four SDLC controls:
 |---|---|
 | Segregation of Duties | `CODEOWNERS` + branch protection requiring 1 independent approval, no self-approval |
 | Change control (no direct commits to main) | Branch protection rule blocking direct pushes |
+| Automated Security Testing Gate | Automated static analysis (SAST) and dependency/software composition analysis (SCA) checks before PR can be merged |
 | Change traceability | Every PR is linked to a GitHub Issue via `Closes #<id>` |
 | Access review | Repo collaborator list, reviewed and documented periodically |
 
